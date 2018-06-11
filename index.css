@@ -79,7 +79,7 @@ body {
     text-decoration: none;
 }
 
-.menu ul li a:hover {
+.menu ul li:hover {
     background-color: #020203;
 }
 
