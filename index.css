@@ -135,7 +135,7 @@ body {
     z-index: 200;
     background: url(banner-pic-1.jpg);
     background-size: 100%;
-    -webkit-animation: child-2-move 5s infinite;
+    -webkit-animation: child-1-move 5s infinite;
     animation: child-1-move 5s infinite;
 }
 
@@ -441,6 +441,8 @@ body {
     height: 870px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
 .competitive-parts-title {
@@ -454,10 +456,25 @@ body {
 }
 
 .competitive-parts-note {
-    float: right;
+    position: absolute;
+    top: 30px;
+    right: 10px;
     font-size: 16px;
     text-align: center;
     line-height: 30px;
+}
+
+.competitive-parts-note ul {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.competitive-parts-note ul li {
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
 }
 
 .competitive-parts-product {
@@ -652,6 +669,7 @@ body {
 }
 
 .copyright ul li:nth-child(1) {
+    float: left;
     margin-top: 35px;
     list-style: none;
     height: 46px;
@@ -661,6 +679,7 @@ body {
 
 .copyright ul li:nth-child(2) {
     float: right;
+    margin-top: 40px;
     font-size: 12px;
     list-style: none;
     font-weight: 500;
